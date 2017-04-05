@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TableRow
+        android:id="@+id/tr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/child_home"
+             />
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_door"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/main_door"
+                    />
+                <TextView
+                    android:id="@+id/tv_DoorSate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门禁控制"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>
